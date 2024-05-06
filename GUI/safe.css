@@ -1,0 +1,27 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* Text color */
+}
+.circle-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.button-text {
+    font-size: 18px;
+    text-align: center;
+}

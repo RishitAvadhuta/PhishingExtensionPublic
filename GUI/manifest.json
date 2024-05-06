@@ -1,0 +1,31 @@
+{
+  "name": "Phishing Extension",
+  "description": "Base Level Extension",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "scripting",
+    "tabs",
+    "activeTab",
+    "storage",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": { 
+    "default_title": "Phishing Extension",
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+"content_scripts": [{
+    "js": ["popup.js", "service-worker.js"],
+    "matches": ["*://*/*"]
+}]
+}
